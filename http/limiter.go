@@ -1,3 +1,10 @@
+package http
+
+import (
+	"golang.org/x/time/rate"
+	"net/http"
+)
+
 type RateLimitedClient struct {
 	client  *http.Client
 	limiter *rate.Limiter
